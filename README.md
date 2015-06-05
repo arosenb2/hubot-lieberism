@@ -1,4 +1,4 @@
-# Hubot Example
+# Hubot, Lieber Me
 
 An script package for generating Lieberisms
 
