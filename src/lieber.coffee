@@ -17,7 +17,7 @@
 phrases = require './data/phrases.json'
 
 module.exports = (robot) ->
-  robot.respond /lieber(|ism) (\S*)/i, (msg) ->
+  robot.respond /lieber(|ism) (me|(\S[a-zA-Z]*))/i, (msg) ->
     name = msg.match[2].trim()
     switch name
       when 'me'
