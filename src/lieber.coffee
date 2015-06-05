@@ -17,10 +17,10 @@
 phrases = require './data/phrases.json'
 
 module.exports = (robot) ->
-    robot.respond /lieber(|ism) (me|.*)/i, (msg) ->
-        name = msg.match[1].trim()
-        switch name
-            when "me"
-                msg.reply ", you are ${msg.random phrases}"
-            else
-                msg.send "#{name} is ${msg.random phrases}"
+  robot.respond /lieber(|ism) (\S*)/i, (msg) ->
+    name = msg.match[1].trim()
+    switch name
+      when 'me'
+        msg.reply ", you are ${msg.random phrases}"
+      else
+        msg.send "#{name} is ${msg.random phrases}"
