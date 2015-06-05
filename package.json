@@ -1,0 +1,41 @@
+{
+    "name": "hubot-lieberism",
+    "description": "Lieberisms for Hubot",
+    "version": "1.0.0",
+    "author": "Aaron Rosenbaum <aaron.rosenbaum@gmail.com>",
+    "license": "MIT",
+
+    "keywords": [
+        "hubot",
+        "hubot-scripts",
+        "gimlet",
+        "lieber",
+        "lieberisms"
+    ],
+
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/arosenb2/hubot-lieberism.git"
+    },
+
+    "bugs": {
+        "url": "https://github.com/arosenb2/hubot-lieberism/issues"
+    },
+
+    "dependencies": {
+        "coffee-script": "~1.6"
+    },
+
+    "devDependencies": {
+        "mocha": "*",
+        "chai": "*",
+        "sinon-chai": "*",
+        "sinon": "*"
+    },
+
+    "main": "index.coffee",
+
+    "scripts": {
+        "test": "script/test"
+    }
+}
