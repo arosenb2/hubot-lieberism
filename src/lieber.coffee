@@ -21,6 +21,6 @@ module.exports = (robot) ->
     name = msg.match[2].trim()
     switch name
       when 'me'
-        msg.reply "#{msg.message.user.name}, you are #{msg.random phrases}"
+        msg.reply "You are #{msg.random phrases}"
       else
         msg.send "#{name} is #{msg.random phrases}"
