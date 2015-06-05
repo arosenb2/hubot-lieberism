@@ -5,11 +5,13 @@ chai.use require 'sinon-chai'
 expect = chai.expect
 
 describe 'lieber', ->
-    beforeEach ->
-        @robot =
-            respond: sinon.spy()
+  beforeEach ->
+    @robot =
+      respond: sinon.spy()
+      hear: sinon.spy()
 
-        require('../src/lieber')(@robot)
+    require('../src/lieber')(@robot)
 
-    it 'responds with something awesome', ->
-        expect(@robot.respond).to.have.been.calledWith(/lieber(|ism) (me|.*)/)
+  it 'registers a respond listener', ->
+    expect(@robot.respond).to.have.been.calledWithMatch sinon.match (val) ->
+      val.test /lieber me/
