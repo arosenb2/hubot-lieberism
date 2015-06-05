@@ -23,4 +23,7 @@ module.exports = (robot) ->
       when 'me'
         msg.reply "You are #{msg.random phrases}"
       else
-        msg.send "#{name} is #{msg.random phrases}"
+        msg.send "#{name.capitalize()} is #{msg.random phrases}"
+
+String::capitalize = ->
+  @substr(0, 1).toUpperCase() + @substr(1)
