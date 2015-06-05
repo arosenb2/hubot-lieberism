@@ -28,8 +28,8 @@
 
     "devDependencies": {
         "mocha": "*",
-        "chai": "*",
-        "sinon-chai": "*",
+        "chai": "1.9.2",
+        "sinon-chai": "2.7.0",
         "sinon": "*"
     },
 
